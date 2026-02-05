@@ -1,0 +1,82 @@
+{
+  "host": "localhost",
+  "port": 5555,
+  "map": "Town04",
+  "candidates_path": "../stopline_candidates.json",
+  "candidate_key": "best",
+  "vehicle": {
+    "blueprint": "vehicle.tesla.model3"
+  },
+  "sync": {
+    "enabled": true,
+    "fixed_delta_seconds": 0.05
+  },
+  "control": {
+    "cruise_speed_kmh": 30.0,
+    "target_speed_k": 1.5,
+    "brake_start_m": 50.0,
+    "stop_hold_distance_m": 3.5,
+    "stop_hold_requires_detection": false,
+    "stop_hold_speed_kmh": 0.5,
+    "lateral": {
+      "lookahead_m": 5.0,
+      "Kp": 1.0,
+      "Ki": 0.0,
+      "Kd": 0.2
+    },
+    "longitudinal": {
+      "Kp": 1.0,
+      "Ki": 0.0,
+      "Kd": 0.1
+    }
+  },
+  "tracking": {
+    "buffer_size": 5,
+    "trigger_threshold": 3
+  },
+  "roi": {
+    "min_m": 0.0,
+    "max_m": 50.0
+  },
+  "detector": {
+    "mode": "api",
+    "url": "http://localhost:8001/detect/SimpleCNN/ARTS",
+    "classname": "stop",
+    "confidence_threshold": 0.0001,
+    "timeout_s": 2.0
+  },
+  "attack": {
+    "enabled": false,
+    "mode": "hard_drop",
+    "asr_path": "ASR.jsonl",
+    "target": "STOP",
+    "model": "SimpleCNN",
+    "speed_kmh": 25,
+    "seed": 0
+  },
+  "runtime": {
+    "max_seconds": 100.0,
+    "stop_end_speed_kmh": 0.001,
+    "stop_end_min_seconds": 1.0,
+    "stop_end_require_hold": true
+  },
+  "camera": {
+    "enabled": true,
+    "width": 1280,
+    "height": 720,
+    "fov": 90.0,
+    "transform": {
+      "x": 1.5,
+      "y": 0.0,
+      "z": 1.4,
+      "pitch": 0.0,
+      "yaw": 0.0
+    },
+    "save_every_n_frames": 5,
+    "out_dir": "logs/camera/api"
+  },
+  "log": {
+    "enabled": true,
+    "path": "logs/camera/api/autopilot.csv"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "best": {
+    "stop_source": "actor",
+    "stop_source_id": 37,
+    "stop_source_name": "traffic.stop",
+    "stop_source_type": "",
+    "stop_source_transform": {
+      "location": {
+        "x": 258.7159729003906,
+        "y": -237.07997131347656,
+        "z": 0.019377440214157104
+      },
+      "rotation": {
+        "roll": 0.0,
+        "pitch": 0.0,
+        "yaw": -91.0189437866211
+      }
+    },
+    "stop_line_location": {
+      "x": 258.7159729003906,
+      "y": -237.07997131347656,
+      "z": 0.019377440214157104
+    },
+    "stop_line_waypoint": {
+      "location": {
+        "x": 258.6348876953125,
+        "y": -237.08021545410156,
+        "z": 0.01958465576171875
+      },
+      "rotation": {
+        "roll": 0.0,
+        "pitch": 0.0,
+        "yaw": -89.82324981689453
+      }
+    },
+    "spawn_point": {
+      "location": {
+        "x": 258.48065185546875,
+        "y": -187.08045959472656,
+        "z": 0.01958465576171875
+      },
+      "rotation": {
+        "roll": 0.0,
+        "pitch": 0.0,
+        "yaw": -89.82324981689453
+      }
+    },
+    "road_id": 29,
+    "lane_id": -1,
+    "max_yaw_delta_deg": 0.0,
+    "max_step_yaw_delta_deg": 0.0
+  },
+  "candidates": [
+    {
+      "stop_source": "actor",
+      "stop_source_id": 37,
+      "stop_source_name": "traffic.stop",
+      "stop_source_type": "",
+      "stop_source_transform": {
+        "location": {
+          "x": 258.7159729003906,
+          "y": -237.07997131347656,
+          "z": 0.019377440214157104
+        },
+        "rotation": {
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": -91.0189437866211
+        }
+      },
+      "stop_line_location": {
+        "x": 258.7159729003906,
+        "y": -237.07997131347656,
+        "z": 0.019377440214157104
+      },
+      "stop_line_waypoint": {
+        "location": {
+          "x": 258.6348876953125,
+          "y": -237.08021545410156,
+          "z": 0.01958465576171875
+        },
+        "rotation": {
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": -89.82324981689453
+        }
+      },
+      "spawn_point": {
+        "location": {
+          "x": 258.48065185546875,
+          "y": -187.08045959472656,
+          "z": 0.01958465576171875
+        },
+        "rotation": {
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": -89.82324981689453
+        }
+      },
+      "road_id": 29,
+      "lane_id": -1,
+      "max_yaw_delta_deg": 0.0,
+      "max_step_yaw_delta_deg": 0.0
+    }
+  ]
+}

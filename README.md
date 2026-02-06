@@ -5,6 +5,10 @@ necessary for evaluating the reproducibility of our paper.
 Heavy data (e.g., full physical-world videos) and large pretrained weights
 are intentionally not bundled; instead, instructions for obtaining or
 substituting them are provided in this README.
+Some large artifacts (e.g., selected pretrained weights and a subset of
+physical-world experimental data) are hosted separately on an anonymized
+OSF repository due to size constraints. These materials are optional for
+artifact evaluation and provided for completeness.
 
 ---
 
@@ -215,6 +219,22 @@ Minimal dependencies:
 - Optuna, Albumentations, OpenCV
 - NumPy, Pandas, Pillow, Matplotlib, scikit-learn
 - LPIPS, scikit-image
+
+### Additional Artifacts on OSF
+
+Due to repository size constraints, the following large artifacts are
+hosted on an anonymized OSF repository:
+
+- Selected pretrained model weights
+- A subset of representative physical-world experimental data
+  (e.g., benign vs. attack images used for illustration)
+
+OSF (view-only, anonymized):
+https://osf.io/d9cne/?view_only=c2053d58f26e48d9a6dc4b133ac492d4
+
+These artifacts are **not required** for reproducing the main results and
+are provided for reference and completeness only.
+
 
 ---
 
